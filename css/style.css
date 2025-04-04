@@ -1,0 +1,272 @@
+:root {
+  --scond: rgb(30, 192, 201);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+/* navbar start */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 7rem 1.4rem;
+}
+.navbar .logo {
+  font-size: 1.7rem;
+}
+
+.navbar-nav a {
+  margin-top: 0;
+  margin: 1rem;
+  display: inline-block;
+  color: black;
+  font-size: 1rem;
+}
+
+.navbar-nav a:hover {
+  color: var(--scond);
+}
+
+.navbar-nav a::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid var(--scond);
+  margin-top: 0.2rem;
+
+  transition: 0.4s;
+  transform: scaleX(0);
+}
+
+.navbar-nav a:hover::after {
+  transform: scale(0.5);
+  transition: 0.4s;
+}
+
+.navbar .button {
+  margin-top: 0.5rem;
+}
+
+.navbar .btn {
+  color: white;
+  background-color: var(--scond);
+  font-size: 1rem;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* about section css */
+.about {
+  padding: 5rem 7% 1.4rem;
+}
+.about .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row .content {
+  flex: 1 1 45rem;
+  margin-right: 2rem;
+  margin-top: 2rem;
+}
+
+.row .content h1 {
+  font-size: 2rem;
+  max-width: 30rem;
+  margin-bottom: 1.5rem;
+}
+
+.row .content p {
+  font-size: 1rem;
+  margin: 1rem 0;
+  max-width: 40rem;
+}
+.row .content .btn {
+  margin-top: 1rem;
+  font-size: 1rem;
+  padding: 0.8rem 1rem;
+  color: white;
+  background-color: var(--scond);
+  border-radius: 5px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.row .img-content img {
+  width: 500px;
+}
+
+.hero {
+  padding: 7rem 7% 1.4rem;
+  justify-content: center;
+  background-color: #eeee;
+}
+
+.txt-content {
+  align-content: center;
+  text-align: center;
+  margin: auto;
+}
+.txt-content h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+}
+
+.txt-content p {
+  font-size: 1rem;
+  font-weight: 100;
+  max-width: 40rem;
+  margin: auto;
+}
+
+.txt-content span {
+  color: var(--scond);
+}
+.card-container {
+  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  width: 100%;
+  justify-content: center;
+}
+
+.card {
+  position: relative;
+  list-style: none;
+  width: 220px;
+  transition: 0.3s ease;
+}
+
+.card::before {
+  content: "";
+  display: block;
+  padding-bottom: 150%;
+  width: 100%;
+}
+
+.card-background {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  border-radius: 20px;
+  background-size: 350px;
+  background-position: center;
+  filter: brightness(0.9) saturate(1) contrast(1);
+  transform-origin: bottom;
+  transform: scale(1) translateZ(0);
+  transition: 0.3s ease;
+}
+
+.card:hover .card-background {
+  transform: scale(1.15) translateZ(0);
+  background-size: 250px;
+}
+
+.card-container:hover .card:not(:hover) {
+  transform: scale(0.9);
+}
+
+.card-container:hover > .card:not(:hover) .card-background,
+.card-container:hover > .card:not(:hover) .card-category {
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(10px);
+}
+
+.hero .content {
+  top: 50%;
+  left: 0;
+  padding: 25px;
+  position: absolute;
+}
+
+.card-category {
+  color: white;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 5px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+}
+
+.card-heading {
+  color: white;
+}
+
+.cssgrid .container {
+  width: 60%;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.item {
+  background-color: rgb(155, 155, 255);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.item:nth-child(even) {
+  background-color: rgb(255, 141, 141);
+}
+
+.boking {
+  padding: 7rem 7% 1.4rem;
+}
+
+.boking h1 {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.8rem;
+}
+
+.boking p {
+  margin-bottom: 3rem;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.boking .container {
+  display: flex;
+  justify-content: center;
+}
+.boking .content {
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  height: auto;
+  width: 300px;
+  text-align: center;
+  margin: 1.5rem;
+}
+.boking img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+
+.boking .container .content p {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-weight: 100;
+  color: #3c3c3c;
+  font-size: 0.9rem;
+}
+
+.boking .content button {
+  padding: 0.5rem 2rem;
+  margin-bottom: 0.5rem;
+  color: white;
+  border-radius: 5px;
+  background-color: var(--scond);
+}

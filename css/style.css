@@ -1,5 +1,6 @@
 :root {
   --scond: rgb(30, 192, 201);
+  --primary: #5372f0;
 }
 
 * {
@@ -294,14 +295,24 @@ body {
   object-fit: cover;
 }
 
+.menu-header {
+  margin-top: 7%;
+  justify-content: center;
+}
+
+.menu-header .container {
+  justify-content: center;
+  text-align: center;
+}
 .menu {
-  margin-top: 7rem;
+  margin: 2rem 1.4rem;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 50%;
   background: white;
 }
+
 .menu h2 {
   display: block;
 }
@@ -323,7 +334,7 @@ body {
 }
 
 .card-list .card-item .card-link:hover {
-  border-color: #5372f0;
+  border-color: var(--scond);
 }
 
 .card-list .card-link .card-image {
@@ -340,7 +351,7 @@ body {
   object-position: center;
 }
 .card-list .card-link .badge {
-  color: #5372f0;
+  color: var(--scond);
   padding: 8px 16px;
   font-size: 0.95rem;
   font-weight: 700;
@@ -350,31 +361,35 @@ body {
   border-radius: 50px;
 }
 .card-list .card-link .badge.Adventure {
-  color: #205c20;
-  background: #d6f8d6;
+  color: #fff;
+  background: var(--scond);
   margin: 9px 0;
 }
 .card-list .card-link .badge.study {
-  color: #205c20;
-  background: #d6f8d6;
+  color: #fff;
+  background: var(--scond);
 }
 .card-list .card-link .badge.jobdesk {
-  color: #b25a2b;
-  background: #ffe3d2;
+  color: #fff;
+  background: var(--scond);
 }
 .card-list .card-link .badge.steall {
-  color: #b22485;
-  background: #f7dff5;
+  color: #fff;
+  background: var(--scond);
 }
 .card-list .card-link .badge.matematik {
-  color: #856404;
-  background: #fff3cd;
+  color: #fff;
+  background: var(--scond);
 }
 
 .card-list .card-link .card-title {
   font-size: 1.1rem;
-  color: #5372f0;
+  color: black;
   font-weight: 500;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
 }
 
 .card-list .card-link .card-button {
@@ -384,12 +399,12 @@ body {
   margin: 30px 0 5px;
   background: none;
   cursor: pointer;
-  border: 2px solid #5372f0;
+  border: 2px solid var(--scond);
   transform: rotate(-45deg);
   transition: 0.4s ease;
 }
 
 .card-list .card-link:hover .card-button {
   color: white;
-  background: #5372f0;
+  background: var(--scond);
 }

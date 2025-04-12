@@ -72,7 +72,6 @@ body {
   border: 1px solid var(--scond);
   border-radius: 5px;
   font-size: 1rem;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 }
 /* about section css */
 .about {
@@ -416,4 +415,67 @@ body {
 .card-list .card-link:hover .card-button {
   color: white;
   background: var(--scond);
+}
+
+/* contact */
+
+.contact {
+  padding: 7rem 7% 1.4rem;
+  justify-content: center;
+}
+.contact .container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contact h4 {
+  color: var(--scond);
+  font-size: 1rem;
+}
+.contact h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.contact p {
+  font-size: 1rem;
+  max-width: 45rem;
+  margin: auto;
+}
+
+.contact .content {
+  margin-top: 2rem;
+  margin-left: 15rem;
+}
+.contact .content label {
+  margin-top: 3rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--scond);
+}
+
+.contact .content input {
+  background-color: rgb(237, 237, 237);
+  display: block;
+  width: 80%;
+  padding: 1rem;
+  border-radius: 5px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.contact .content-btn {
+  justify-content: center;
+}
+.contact .content-btn button {
+  width: 65%;
+  display: block;
+  margin-left: 15rem;
+  padding: 0.8rem;
+  background-color: var(--scond);
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
 }

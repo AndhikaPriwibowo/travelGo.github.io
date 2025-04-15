@@ -20,9 +20,16 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 2rem 7rem 1.4rem;
+  position: fixed;
+  background-color: rgb(239, 239, 239);
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
 }
 .navbar .logo {
   font-size: 1.7rem;
+  margin-top: 0.5rem;
 }
 
 .navbar-nav a {
@@ -478,4 +485,52 @@ body {
   color: white;
   font-size: 1rem;
   border-radius: 5px;
+}
+
+/* Media Queris*/
+
+/*Laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+/*Tablet*/
+@media (max-width: 768px) {
+  html {
+    font-size: 62%;
+  }
+
+  #hamburger-menu {
+    display: inline-block;
+  }
+  .navbar {
+    padding-left: 5rem;
+    padding-right: 3rem;
+  }
+  .navbar .navbar-nav {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 20rem;
+    height: 100vh;
+    background-color: rgb(239, 239, 239);
+  }
+  .navbar .navbar-nav.active {
+    right: 0%;
+    transition: 0.2s;
+  }
+  .navbar .navbar-nav a {
+    display: block;
+    margin: 1.5rem;
+    padding: 0.5rem;
+    font-size: 1.1rem;
+    justify-content: center;
+    display: flex;
+  }
+
+  .navbar .navbar-nav a::after {
+    transform-origin: 0 0;
+  }
 }

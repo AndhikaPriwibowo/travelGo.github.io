@@ -28,3 +28,9 @@ new Swiper(".card-wrapper", {
     },
   },
 });
+
+const navbar = document.querySelector(".navbar-nav");
+
+const button = (document.querySelector("#btn").onclick = () => {
+  navbar.classList.toggle("active");
+});
